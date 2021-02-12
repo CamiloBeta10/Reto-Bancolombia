@@ -6,8 +6,8 @@ import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
-import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 import static org.springframework.web.reactive.function.server.RequestPredicates.*;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 
 @Configuration
@@ -18,11 +18,12 @@ public class Router {
 public RouterFunction<ServerResponse> routerFunction(Handler handler) {
     return route(
             POST("/consulta/saldos")
+            .and(accept(MediaType.APPLICATION_JSON)),
+                    //.and(contentType(MediaType.APPLICATION_JSON)),
+            handler::getBalanceAccount);
+            /*.andRoute(GET("Router")
             .and(accept(MediaType.APPLICATION_JSON))
-                    .and(contentType(MediaType.APPLICATION_JSON)), handler::getBalanceAccount)
-            .andRoute(GET("Router")
-            .and(accept(MediaType.APPLICATION_JSON))
-            .and(contentType(MediaType.APPLICATION_JSON)), handler::getBalanceAccount);
+            .and(contentType(MediaType.APPLICATION_JSON)), handler::getBalanceAccount);*/
 
 
 

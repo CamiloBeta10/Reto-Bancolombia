@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class ObjectRequest {
-    public DataRequest dataRequest;
+    public DataRequest data;
 
 }
+ 

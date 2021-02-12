@@ -12,6 +12,8 @@ co/com/balance/model/retriveBalances/object/ObjectRequest.java
  co.com.balance.model.retriveBalances.object.ObjectRequest$ObjectRequestBuilder
 co/com/balance/model/retriveBalances/RetriveBalanceGateway.java
  co.com.balance.model.retriveBalances.RetriveBalanceGateway
+co/com/balance/model/retrieveTransactions/RetriveMovementGateway.java
+ co.com.balance.model.retrieveTransactions.RetriveMovementGateway
 co/com/balance/model/retriveBalances/data2/DataRequest.java
  co.com.balance.model.retriveBalances.data2.DataRequest
 co/com/balance/model/retriveBalances/account/AccountResponse.java
