@@ -14,9 +14,10 @@ public class BalanceUseCase {
     }
 
     public Mono<ObjectResponse> getBalanceAccount(ObjectRequest objectRequest){
+        System.out.println(objectRequest);
         return retriveBalanceGateway
                 .getBalanceAccount(objectRequest);
-                //.flatMap(objectResponse -> retriveBalanceGateway.getBalanceAccount(objectRequest));
+
 
     }
 

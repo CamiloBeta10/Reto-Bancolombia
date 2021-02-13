@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class ObjectResponse {
-    public DataResponse dataResponse;
+    private DataResponse data;
 
 }

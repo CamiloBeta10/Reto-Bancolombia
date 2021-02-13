@@ -1,4 +1,2 @@
-co/com/movement/usecase/MovementUseCase.java
- co.com.movement.usecase.MovementUseCase
 co/com/balance/usecase/BalanceUseCase.java
  co.com.balance.usecase.BalanceUseCase

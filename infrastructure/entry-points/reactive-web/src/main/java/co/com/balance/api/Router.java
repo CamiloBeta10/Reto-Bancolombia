@@ -19,13 +19,7 @@ public RouterFunction<ServerResponse> routerFunction(Handler handler) {
     return route(
             POST("/consulta/saldos")
             .and(accept(MediaType.APPLICATION_JSON)),
-                    //.and(contentType(MediaType.APPLICATION_JSON)),
             handler::getBalanceAccount);
-            /*.andRoute(GET("Router")
-            .and(accept(MediaType.APPLICATION_JSON))
-            .and(contentType(MediaType.APPLICATION_JSON)), handler::getBalanceAccount);*/
-
-
 
         }
     }

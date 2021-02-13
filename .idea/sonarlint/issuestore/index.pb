@@ -35,8 +35,6 @@ Uinfrastructure/entry-points/reactive-web/src/main/java/co/com/balance/api/Route
 Zdomain/model/src/main/java/co/com/balance/model/retriveBalances/RetriveBalanceGateway.java,d/1/d130d36a3d6323ffe9f855232898c4afb8618202
 •
 uinfrastructure/driven-adapters/reactive-rest-balance/src/main/java/co/com/balance/balancerest/RetriveBalanceRest.java,a/1/a1d36c0ce349127f11eafff3c175bbd98a740f2a
-
-Odomain/usecase/src/main/java/co/com/balance/usecase/balance/BalanceUseCase.java,7/a/7a2ad6eabbfc00253559cb5085d2af4cd75838d7
 Å
 Qapplications/app-service/src/main/java/co/com/balance/Config/WebClientConfig.java,9/9/999e1c1c47aba9fcd615d81a46a4709795304389
 Ü

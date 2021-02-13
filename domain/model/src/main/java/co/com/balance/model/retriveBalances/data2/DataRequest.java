@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DataRequest {
-    public AccountRequest account;
+    private AccountRequest account;
 
 }

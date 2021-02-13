@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 public class AccountResponse {
-    private BalanceResponse balanceResponse;
+    private BalanceResponse balances;
 }

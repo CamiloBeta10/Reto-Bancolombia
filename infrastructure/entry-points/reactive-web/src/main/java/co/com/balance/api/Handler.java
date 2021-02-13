@@ -5,7 +5,6 @@ import co.com.balance.model.retriveBalances.object.ObjectResponse;
 import co.com.balance.usecase.BalanceUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -20,18 +19,15 @@ public class Handler {
 
     public Mono<ServerResponse> getBalanceAccount(ServerRequest serverRequest) {
 
-        Mono<ObjectRequest> body = serverRequest
-                .bodyToMono(ObjectRequest.class);
-            body.subscribe(x->System.out.println(x.toString()));
-
-        Mono<ObjectResponse>  result =  serverRequest
+       Mono<ObjectResponse>  result =  serverRequest
                 .bodyToMono(ObjectRequest.class)
                 .flatMap(objectRequest -> balanceUseCase.getBalanceAccount(objectRequest));
 
+
         return ServerResponse
                 .ok()
-                //.contentType(MediaType.APPLICATION_JSON)
-                .body(result,BalanceUseCase.class);
+                .body(result,ObjectResponse.class);
+
     }
 
 }
