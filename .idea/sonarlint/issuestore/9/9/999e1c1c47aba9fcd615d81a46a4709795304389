@@ -1,2 +1,4 @@
 
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÿğĞ8àŞ¼òø.
+
+java:S1130"sRemove the declaration of thrown exception 'javax.net.ssl.SSLException', as it cannot be thrown from method's body.(§Ê§˜8‰Õ³Æù.

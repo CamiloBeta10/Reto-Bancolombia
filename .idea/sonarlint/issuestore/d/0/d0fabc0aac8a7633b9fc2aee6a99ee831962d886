@@ -1,0 +1,8 @@
+
+x
+java:S1128"\Remove this unused import 'co.com.balance.model.retrieveTransactions.office.OfficeMovement'.(ÍÒò8å”¿»û.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õğ³úÿÿÿÿ
+‚
+java:S1128"eRemove this unused import 'co.com.balance.model.retrieveTransactions.transaction.TransactionRequest'.(„’š¦8å”¿»û.
+t	java:S116"XRename this field "_responseSize" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÄâŞ8å”¿»û.
+|	java:S116"[Rename this field "_flagMoreRecords" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÙÄ…ûÿÿÿÿ8ó‰Ã»û.
