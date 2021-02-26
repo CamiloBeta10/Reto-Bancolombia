@@ -1,6 +1,9 @@
 co/com/balance/model/retriveBalances/account/AccountRequest.java
  co.com.balance.model.retriveBalances.account.AccountRequest
  co.com.balance.model.retriveBalances.account.AccountRequest$AccountRequestBuilder
+co/com/balance/model/responseApi/DataApi.java
+ co.com.balance.model.responseApi.DataApi
+ co.com.balance.model.responseApi.DataApi$DataApiBuilder
 co/com/balance/model/retriveBalances/object/ObjectRequest.java
  co.com.balance.model.retriveBalances.object.ObjectRequest
  co.com.balance.model.retriveBalances.object.ObjectRequest$ObjectRequestBuilder
@@ -36,9 +39,6 @@ co/com/balance/model/retriveBalances/object/ObjectResponse.java
 co/com/balance/model/retriveBalances/data2/DataResponse.java
  co.com.balance.model.retriveBalances.data2.DataResponse
  co.com.balance.model.retriveBalances.data2.DataResponse$DataResponseBuilder
-co/com/balance/model/account/Account.java
- co.com.balance.model.account.Account
- co.com.balance.model.account.Account$AccountBuilder
 co/com/balance/model/retrieveTransactions/office/OfficeMovementResponse.java
  co.com.balance.model.retrieveTransactions.office.OfficeMovementResponse
  co.com.balance.model.retrieveTransactions.office.OfficeMovementResponse$OfficeMovementResponseBuilder
@@ -59,3 +59,6 @@ co/com/balance/model/retrieveTransactions/relatedTransferAccount/RelatedTransfer
 co/com/balance/model/retriveBalances/balance/BalanceResponse.java
  co.com.balance.model.retriveBalances.balance.BalanceResponse
  co.com.balance.model.retriveBalances.balance.BalanceResponse$BalanceResponseBuilder
+co/com/balance/model/movements/Movements.java
+ co.com.balance.model.movements.Movements
+ co.com.balance.model.movements.Movements$MovementsBuilder
