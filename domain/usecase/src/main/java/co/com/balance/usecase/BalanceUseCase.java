@@ -1,11 +1,9 @@
 package co.com.balance.usecase;
 
-import co.com.balance.model.account.Account;
 import co.com.balance.model.retrieveTransactions.RetriveMovementGateway;
 import co.com.balance.model.retrieveTransactions.object.ObjectMovementRequest;
 import co.com.balance.model.retrieveTransactions.object.ObjectMovementResponse;
 import co.com.balance.model.retriveBalances.RetriveBalanceGateway;
-import co.com.balance.model.retriveBalances.account.AccountRequest;
 import co.com.balance.model.retriveBalances.data2.DataRequest;
 import co.com.balance.model.retriveBalances.object.ObjectRequest;
 import co.com.balance.model.retriveBalances.object.ObjectResponse;
@@ -18,24 +16,6 @@ public class BalanceUseCase {
 
     private final RetriveBalanceGateway retriveBalanceGateway;
     private final RetriveMovementGateway retriveMovementGateway;
-
-/*
-    public BalanceUseCase(RetriveBalanceGateway retriveBalanceGateway, RetriveMovementGateway retriveMovementGateway) {
-        this.retriveBalanceGateway = retriveBalanceGateway;
-        this.retriveMovementGateway = retriveMovementGateway;
-    }
-
-    /*public Mono<ObjectResponse>getBalance(ObjectRequest objectRequest){
-        System.out.println(objectRequest);
-        return retriveBalanceGateway
-                .getBalanceAccount(objectRequest);
-
-    }
-
-    public Mono <ObjectMovementResponse>getMovement(ObjectMovementRequest objectMovementRequest){
-        return retriveMovementGateway
-                .getMovementAccount(objectMovementRequest);
-    } */
 
     public Mono<ObjectMovementResponse> getBalanceAndMovement(ObjectMovementRequest objectMovementRequest) {
         ObjectRequest balanceRequest = ObjectRequest.builder()
