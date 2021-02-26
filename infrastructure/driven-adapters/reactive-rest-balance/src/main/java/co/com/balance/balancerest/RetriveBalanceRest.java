@@ -25,7 +25,8 @@ public class RetriveBalanceRest implements RetriveBalanceGateway {
                 .body(Mono.just(objectRequest),ObjectRequest.class)
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
-                .bodyToMono(ObjectResponse.class);
+                .bodyToMono(ObjectResponse.class)
+                .log();
 
         return balance;
     }

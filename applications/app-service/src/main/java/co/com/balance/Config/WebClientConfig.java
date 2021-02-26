@@ -11,7 +11,7 @@ public class WebClientConfig {
 
     @Bean
     public WebClient createWebClient() throws SSLException {
-        return WebClient.builder().baseUrl("https://red-grass-1423.getsandbox.com").build();
+        return WebClient.builder().baseUrl("https://rough-dust-8231.getsandbox.com").build();
     }
 
 }

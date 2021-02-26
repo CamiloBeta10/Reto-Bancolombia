@@ -21,14 +21,15 @@ public class RetriveMovementRest implements RetriveMovementGateway {
     private WebClient webClient;
 
     @Override
-    public Mono<ObjectMovementResponse> getBalanceAccount(ObjectMovementRequest objectMovementRequest) {
+    public Mono<ObjectMovementResponse> getMovementAccount(ObjectMovementRequest objectMovementRequest) {
         Mono<ObjectMovementResponse> movement = webClient
                 .post()
                 .uri("/consulta/movimientos")
                 .body(Mono.just(objectMovementRequest),ObjectMovementRequest.class)
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
-                .bodyToMono(ObjectMovementResponse.class);
+                .bodyToMono(ObjectMovementResponse.class)
+                .log();
 
         return movement;
     }

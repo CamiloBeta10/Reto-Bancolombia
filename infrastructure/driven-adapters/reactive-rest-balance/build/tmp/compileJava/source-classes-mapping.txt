@@ -1,2 +1,4 @@
+co/com/balance/balancerest/RetriveMovementRest.java
+ co.com.balance.balancerest.RetriveMovementRest
 co/com/balance/balancerest/RetriveBalanceRest.java
  co.com.balance.balancerest.RetriveBalanceRest

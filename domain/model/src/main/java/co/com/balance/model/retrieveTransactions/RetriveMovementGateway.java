@@ -6,5 +6,5 @@ import reactor.core.publisher.Mono;
 
 public interface RetriveMovementGateway {
 
-   Mono<ObjectMovementResponse> getMovement(ObjectMovementRequest objectMovementRequest);
+   Mono<ObjectMovementResponse> getMovementAccount(ObjectMovementRequest objectMovementRequest);
 }

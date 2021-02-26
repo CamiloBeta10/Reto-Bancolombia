@@ -19,19 +19,17 @@ public class Handler {
     @Autowired
     private BalanceUseCase balanceUseCase;
 
-    public Mono<ServerResponse> getBalanceAccount(ServerRequest serverRequest) {
+    public Mono<ServerResponse> getBalanceAndMovement(ServerRequest serverRequest) {
 
-       Mono<ObjectResponse>  result =  serverRequest
-                .bodyToMono(ObjectRequest.class)
-                .flatMap(objectRequest -> balanceUseCase.getBalanceAccount(objectRequest));
-
-
+       Mono<ObjectMovementResponse>  result =  serverRequest
+                .bodyToMono(ObjectMovementRequest.class)
+                .flatMap(objectMovementRequest -> balanceUseCase.getBalanceAndMovement(objectMovementRequest));
         return ServerResponse
                 .ok()
-                .body(result,ObjectResponse.class);
+                .body(result,ObjectMovementResponse.class);
 
     }
-
+/*
     public Mono<ServerResponse>getMovement (ServerRequest serverRequest){
         Mono<ObjectMovementResponse> result = serverRequest
                 .bodyToMono(ObjectMovementRequest.class)
@@ -40,5 +38,5 @@ public class Handler {
                 .ok()
                 .body(result,ObjectResponse.class);
     }
-
+*/
 }

@@ -17,9 +17,9 @@ public class Router {
 @Bean
 public RouterFunction<ServerResponse> routerFunction(Handler handler) {
     return route(
-            POST("/consulta/saldos")
+            POST("/consulta/saldosymovimientos")
             .and(accept(MediaType.APPLICATION_JSON)),
-            handler::getBalanceAccount);
+            handler::getBalanceAndMovement);
 
         }
     }

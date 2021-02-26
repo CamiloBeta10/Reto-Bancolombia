@@ -1,9 +1,3 @@
-co/com/balance/model/retriveBalances/object/ObjectResponse.java
- co.com.balance.model.retriveBalances.object.ObjectResponse
- co.com.balance.model.retriveBalances.object.ObjectResponse$ObjectResponseBuilder
-co/com/balance/model/retriveBalances/data2/DataResponse.java
- co.com.balance.model.retriveBalances.data2.DataResponse
- co.com.balance.model.retriveBalances.data2.DataResponse$DataResponseBuilder
 co/com/balance/model/retriveBalances/account/AccountRequest.java
  co.com.balance.model.retriveBalances.account.AccountRequest
  co.com.balance.model.retriveBalances.account.AccountRequest$AccountRequestBuilder
@@ -12,13 +6,56 @@ co/com/balance/model/retriveBalances/object/ObjectRequest.java
  co.com.balance.model.retriveBalances.object.ObjectRequest$ObjectRequestBuilder
 co/com/balance/model/retriveBalances/RetriveBalanceGateway.java
  co.com.balance.model.retriveBalances.RetriveBalanceGateway
-co/com/balance/model/retrieveTransactions/RetriveMovementGateway.java
- co.com.balance.model.retrieveTransactions.RetriveMovementGateway
 co/com/balance/model/retriveBalances/data2/DataRequest.java
  co.com.balance.model.retriveBalances.data2.DataRequest
+ co.com.balance.model.retriveBalances.data2.DataRequest$DataRequestBuilder
+co/com/balance/model/retrieveTransactions/object/ObjectMovementRequest.java
+ co.com.balance.model.retrieveTransactions.object.ObjectMovementRequest
+ co.com.balance.model.retrieveTransactions.object.ObjectMovementRequest$ObjectMovementRequestBuilder
 co/com/balance/model/retriveBalances/account/AccountResponse.java
  co.com.balance.model.retriveBalances.account.AccountResponse
  co.com.balance.model.retriveBalances.account.AccountResponse$AccountResponseBuilder
+co/com/balance/model/retrieveTransactions/transaction/TransactionRequest.java
+ co.com.balance.model.retrieveTransactions.transaction.TransactionRequest
+ co.com.balance.model.retrieveTransactions.transaction.TransactionRequest$TransactionRequestBuilder
+co/com/balance/model/retrieveTransactions/data/DataMovementRequest.java
+ co.com.balance.model.retrieveTransactions.data.DataMovementRequest
+ co.com.balance.model.retrieveTransactions.data.DataMovementRequest$DataMovementRequestBuilder
+co/com/balance/model/retrieveTransactions/customer/CustomerResponse.java
+ co.com.balance.model.retrieveTransactions.customer.CustomerResponse
+ co.com.balance.model.retrieveTransactions.customer.CustomerResponse$CustomerResponseBuilder
+co/com/balance/model/retrieveTransactions/pagination/PaginationMovementRequest.java
+ co.com.balance.model.retrieveTransactions.pagination.PaginationMovementRequest
+ co.com.balance.model.retrieveTransactions.pagination.PaginationMovementRequest$PaginationMovementRequestBuilder
+co/com/balance/model/retrieveTransactions/data/DataMovementResponse.java
+ co.com.balance.model.retrieveTransactions.data.DataMovementResponse
+ co.com.balance.model.retrieveTransactions.data.DataMovementResponse$DataMovementResponseBuilder
+co/com/balance/model/retriveBalances/object/ObjectResponse.java
+ co.com.balance.model.retriveBalances.object.ObjectResponse
+ co.com.balance.model.retriveBalances.object.ObjectResponse$ObjectResponseBuilder
+co/com/balance/model/retriveBalances/data2/DataResponse.java
+ co.com.balance.model.retriveBalances.data2.DataResponse
+ co.com.balance.model.retriveBalances.data2.DataResponse$DataResponseBuilder
+co/com/balance/model/account/Account.java
+ co.com.balance.model.account.Account
+ co.com.balance.model.account.Account$AccountBuilder
+co/com/balance/model/retrieveTransactions/office/OfficeMovementResponse.java
+ co.com.balance.model.retrieveTransactions.office.OfficeMovementResponse
+ co.com.balance.model.retrieveTransactions.office.OfficeMovementResponse$OfficeMovementResponseBuilder
+co/com/balance/model/retrieveTransactions/transaction/TransactionResponse.java
+ co.com.balance.model.retrieveTransactions.transaction.TransactionResponse
+ co.com.balance.model.retrieveTransactions.transaction.TransactionResponse$TransactionResponseBuilder
+co/com/balance/model/retrieveTransactions/RetriveMovementGateway.java
+ co.com.balance.model.retrieveTransactions.RetriveMovementGateway
+co/com/balance/model/retrieveTransactions/object/ObjectMovementResponse.java
+ co.com.balance.model.retrieveTransactions.object.ObjectMovementResponse
+ co.com.balance.model.retrieveTransactions.object.ObjectMovementResponse$ObjectMovementResponseBuilder
+co/com/balance/model/retrieveTransactions/office/OfficeMovement.java
+ co.com.balance.model.retrieveTransactions.office.OfficeMovement
+ co.com.balance.model.retrieveTransactions.office.OfficeMovement$OfficeMovementBuilder
+co/com/balance/model/retrieveTransactions/relatedTransferAccount/RelatedTransferAccountResponse.java
+ co.com.balance.model.retrieveTransactions.relatedTransferAccount.RelatedTransferAccountResponse
+ co.com.balance.model.retrieveTransactions.relatedTransferAccount.RelatedTransferAccountResponse$RelatedTransferAccountResponseBuilder
 co/com/balance/model/retriveBalances/balance/BalanceResponse.java
  co.com.balance.model.retriveBalances.balance.BalanceResponse
  co.com.balance.model.retriveBalances.balance.BalanceResponse$BalanceResponseBuilder

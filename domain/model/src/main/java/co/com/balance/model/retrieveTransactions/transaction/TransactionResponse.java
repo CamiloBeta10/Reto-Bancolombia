@@ -12,8 +12,9 @@ import lombok.NoArgsConstructor;
 @Builder(toBuilder = true)
 public class TransactionResponse {
     private String id;
-    private String decription;
+    private String postedDate;
     private String amount;
+    private String decription;
     private String type;
     private String reference1;
     private String reference2;
